@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8>
+<title>神経衰弱ゲーム</title>
+<script src="concent.js"></script>
+</head>
+<body>
+<p>神経衰弱ゲーム </p>
+<hr>
+<p><form name=settingForm onsubmit="return false">
+<button name=startButton type=button style="margin-right:2em">開始</button>
+<label style="margin-right:1em">
+<input name=colorSensitiveCheck type=checkbox>色区別
+</label>
+横配置数:<input name=numColsInput type=number min=2 max=13 value=4 style="margin-right:1em">
+カード:<select name=maxNumberSelect>
+<option value=2>2</option>
+<option value=3 selected>3</option>
+<option value=4>4</option>
+<option value=5>5</option>
+<option value=6>6</option>
+<option value=7>7</option>
+<option value=8>8</option>
+<option value=9>9</option>
+<option value=10>10</option>
+<option value=11>J</option>
+<option value=12>Q</option>
+<option value=13>K</option>
+</select> まで
+</form></p>
+<hr>
+<p style="font-size:larger">経過時間: <span id=elapsed>0</span> 秒</p>
+<div id=field></div>
+</body>
+</html>
